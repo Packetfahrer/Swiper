@@ -9,8 +9,6 @@
 
 // WHY THE FUCK WAS A TWEAK LIKE THIS BEHIND A PATREON!!!
 
-#import "Swiper.h"
-
 %hook SBAppSwitcherSettings
 - (NSInteger)effectiveKillAffordanceStyle {
 	return 2;
@@ -24,3 +22,4 @@
 	%orig(2);
 }
 %end
+

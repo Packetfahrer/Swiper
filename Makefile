@@ -1,14 +1,11 @@
 TARGET = :clang
-ARCHS = armv7 arm64
-FINALPACKAGE = 0
+ARCHS = arm64
+FINALPACKAGE = 1
 
 include $(THEOS)/makefiles/common.mk
 
 TWEAK_NAME = Swiper
-Swiper_FILES = Swiper.xm $(wildcard *.m)
-#Swiper_FRAMEWORKS = UIKit
-#Swiper_PRIVATE_FRAMEWORKS
-#Swiper_LIBRARIES
+Swiper_FILES = Swiper.xm
 
 include $(THEOS_MAKE_PATH)/tweak.mk
 

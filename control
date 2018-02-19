@@ -1,9 +1,9 @@
 Package: com.cpdigitaldarkroom.swiper
 Name: Swiper
 Depends: mobilesubstrate
-Version: 0.0.1
+Version: 1.0
 Architecture: iphoneos-arm
-Description: An Awesome Cydia Substrate Tweak!
+Description: Swipe To Close Apps on iPhone X
 Maintainer: CP Digital Darkroom <tweaks@cpdigitaldarkroom.support>
 Author: CP Digital Darkroom <tweaks@cpdigitaldarkroom.support>
 Section: Tweaks

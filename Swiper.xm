@@ -2,13 +2,25 @@
 //  Swiper.xm
 //  Swiper
 //
-//  Created by CP Digital Darkroom <tweaks@cpdigitaldarkroom.support> on 02/19/2018.
-//  Copyright © 2018 CP Digital Darkroom <tweaks@cpdigitaldarkroom.support>. All rights reserved.
+//  Created by Juan Carlos Perez <carlos@jcarlosperez.me> on 02/19/2018.
+//  Compltely based on Andy Wiik's work in LittleX
+//  https://github.com/ioscreatix/LittleX/blob/master/Tweak.xm#L200
 //
 
-#import "Swiper.h"
-#import "CPDDSWPrefManager.h"
+// WHY THE FUCK WAS A TWEAK LIKE THIS BEHIND A PATREON!!!
 
-%ctor{
-    [CPDDSWPrefManager sharedPrefs];
+#import "Swiper.h"
+
+%hook SBAppSwitcherSettings
+- (NSInteger)effectiveKillAffordanceStyle {
+	return 2;
 }
+
+- (NSInteger)killAffordanceStyle {
+	return 2;
+}
+
+- (void)setKillAffordanceStyle:(NSInteger)style {
+	%orig(2);
+}
+%end

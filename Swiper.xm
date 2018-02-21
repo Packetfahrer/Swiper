@@ -7,8 +7,6 @@
 //  https://github.com/ioscreatix/LittleX/blob/master/Tweak.xm#L200
 //
 
-// WHY THE FUCK WAS A TWEAK LIKE THIS BEHIND A PATREON!!!
-
 %hook SBAppSwitcherSettings
 - (NSInteger)effectiveKillAffordanceStyle {
 	return 2;
